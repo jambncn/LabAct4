@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Felis — A comprehensive guide to cat breeds, history, and fascinating feline facts.">
+  <title>Felis — The World of Cats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor"      id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><span>F</span>elis</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="breeds.html">Breeds</a></li>
+      <li><a href="#timeline">History</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="games.html">Games</a></li>
+    </ul>
+    <span class="nav-count">70+ Breeds Catalogued</span>
+  </nav>
+
+  
+  <section id="hero">
+    <div class="hero-ambient"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">A comprehensive feline compendium</p>
+      <h1>Born Wild, <em>Refined</em><br>by Time</h1>
+      <p class="hero-desc">
+        From the sacred temples of ancient Egypt to the modern living room,
+        cats have captivated humanity for over 10,000 years.
+        Explore 70+ breeds, a complete history timeline, and the science
+        behind our most mysterious companions.
+      </p>
+      <div class="hero-actions">
+        <a href="breeds.html" class="btn-primary">Explore Breeds →</a>
+        <a href="#timeline"   class="btn-outline">View History</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <svg class="hero-cat-svg" viewBox="0 0 300 520" fill="white" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M188 430 C230 422 268 398 272 362 C276 326 255 302 234 306 C218 309 210 324 218 337 C226 350 240 346 236 333" stroke="white" stroke-width="16" stroke-linecap="round" fill="none"/>
+        
+        <path d="M90 260 C88 320 95 390 105 430 C115 455 185 455 195 430 C205 390 212 320 210 260 C210 220 88 220 90 260 Z"/>
+        
+        <path d="M118 222 C118 195 182 195 182 222 L188 250 C188 265 112 265 112 250 Z"/>
+       
+        <ellipse cx="150" cy="175" rx="58" ry="52"/>
+     
+        <polygon points="108,148 94,92 138,138"/>
+       
+        <polygon points="192,148 206,92 162,138"/>
+        
+        <ellipse cx="115" cy="455" rx="16" ry="10"/>
+       
+        <ellipse cx="185" cy="455" rx="16" ry="10"/>
+      </svg>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-num">70+</span>
+        <span class="hero-stat-lbl">Recognized breeds</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">10K</span>
+        <span class="hero-stat-lbl">Years of history</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">600M</span>
+        <span class="hero-stat-lbl">Cats worldwide</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+ 
+  <section id="breeds-preview">
+    <div class="section-wrap">
+      <div class="preview-inner">
+        <div class="preview-text">
+          <p class="section-label">Breed Catalog</p>
+          <h2 class="section-title">70+ Breeds<br><em>Documented</em></h2>
+          <p class="section-sub">
+            From the ancient Abyssinian to the exotic Savannah hybrid —
+            every officially recognized breed with origin, traits, and profile images.
+          </p>
+          <a href="breeds.html" class="btn-primary" style="margin-top:2.2rem;display:inline-flex;">Browse All Breeds →</a>
+        </div>
+        <div class="preview-categories">
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">16</span>
+            <span class="preview-cat-name">Ancient</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">15</span>
+            <span class="preview-cat-name">Western</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">09</span>
+            <span class="preview-cat-name">Asian</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">15</span>
+            <span class="preview-cat-name">American</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">08</span>
+            <span class="preview-cat-name">Rex / Hairless</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">04</span>
+            <span class="preview-cat-name">Hybrids</span>
+          </div>
+          <div class="preview-cat-item">
+            <span class="preview-cat-count">04</span>
+            <span class="preview-cat-name">Unique</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="timeline">
+    <div class="timeline-center-line"></div>
+    <div class="section-wrap">
+      <div class="section-header">
+        <p class="section-label">Through the Ages</p>
+        <h2 class="section-title">A History of the<br><em>Domestic Cat</em></h2>
+        <p class="section-sub">
+          10,000 years of feline and human coexistence —
+          from Neolithic grain stores to internet stardom.
+        </p>
+      </div>
+      <div class="timeline-list" id="timelineList"></div>
+    </div>
+  </section>
+
+  <section id="facts">
+    <div class="section-wrap">
+      <div class="section-header">
+        <p class="section-label">Did You Know</p>
+        <h2 class="section-title">Feline Science &<br><em>Fascinating Facts</em></h2>
+      </div>
+      <div class="facts-layout">
+        <div class="facts-left"><div id="factsList"></div></div>
+        <div class="facts-right" id="statsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jamella Bunocan</p>
+   <p class="footer-copy">Inspired by my beloved sons and daughter: Haru, Ginger &amp; Calcipher</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

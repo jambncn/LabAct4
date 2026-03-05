@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Felis — Complete catalog of 70+ recognized cat breeds.">
+  <title>Felis — Breed Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-breeds">
+
+  <div class="cursor"      id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><span>F</span>elis</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="breeds.html" class="active">Breeds</a></li>
+      <li><a href="index.html#timeline">History</a></li>
+      <li><a href="index.html#facts">Facts</a></li>
+      <li><a href="games.html">Games</a></li>
+    </ul>
+    <span class="nav-count">70+ Breeds Catalogued</span>
+  </nav>
+
+
+  <div class="page-hero">
+    <div class="hero-ambient"></div>
+    <div class="hero-grain"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Complete catalog</p>
+      <h1>Cat <em>Feline Breeds</em><br>of the World</h1>
+      <p class="page-hero-sub">Every officially recognized breed — from the most ancient natural cats to cutting-edge modern hybrids.</p>
+    </div>
+  </div>
+
+
+  <section id="breeds">
+    <div class="section-wrap">
+
+      <div class="breeds-controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="breedSearch" placeholder="Search breed, origin, trait…">
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ancient">Ancient</button>
+          <button class="filter-btn" data-filter="western">Western</button>
+          <button class="filter-btn" data-filter="asian">Asian</button>
+          <button class="filter-btn" data-filter="american">American</button>
+          <button class="filter-btn" data-filter="rex">Rex / Hairless</button>
+          <button class="filter-btn" data-filter="hybrid">Hybrids</button>
+          <button class="filter-btn" data-filter="unique">Unique</button>
+        </div>
+      </div>
+
+      <p class="breeds-count">Showing <span id="breedsShown">71</span> breeds</p>
+
+      <div class="breeds-grid" id="breedsGrid">
+
+        <div class="breed-card" data-category="ancient" data-name="Abyssinian" data-origin="Ethiopia" data-traits="active curious playful">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Abyssinian.png" alt="Abyssinian" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Abyssinian</span><code class="ph-path">./images/abyssinian.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Abyssinian</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Ethiopia</span><span>⚖ Medium</span><span>🕐 ~4000 BC</span></div>
+            <p class="breed-desc">One of the oldest known breeds with a distinctive ticked tabby coat. Named for Abyssinia, though genetic research points to Southeast Asia. Highly athletic and endlessly inquisitive.</p>
+            <div class="breed-traits"><span class="trait">Active</span><span class="trait">Curious</span><span class="trait">Playful</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Egyptian Mau" data-origin="Egypt" data-traits="fast loyal spotted">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Egyptian Mau.png" alt="Egyptian Mau" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Egyptian Mau</span><code class="ph-path">./images/egyptian-mau.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Egyptian Mau</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Egypt</span><span>⚖ Medium</span><span>🕐 ~1500 BC</span></div>
+            <p class="breed-desc">The only naturally spotted domestic cat. Ancient Egyptian art depicts nearly identical cats. Capable of speeds up to 30 mph — the fastest domestic cat breed.</p>
+            <div class="breed-traits"><span class="trait">Fast</span><span class="trait">Loyal</span><span class="trait">Spotted</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Turkish Angora" data-origin="Turkey" data-traits="elegant athletic vocal">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Turkish Angora.png" alt="Turkish Angora" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Turkish Angora</span><code class="ph-path">./images/turkish-angora.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Turkish Angora</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Turkey</span><span>⚖ Medium</span><span>🕐 ~1600s</span></div>
+            <p class="breed-desc">A national treasure in Turkey, bred at the Ankara Zoo for centuries. Their silky, single-layer coat flows with every graceful movement. One of the oldest natural long-haired breeds.</p>
+            <div class="breed-traits"><span class="trait">Elegant</span><span class="trait">Athletic</span><span class="trait">Vocal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Turkish Van" data-origin="Turkey" data-traits="swimmer energetic bold">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Turkish Van.png" alt="Turkish Van" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Turkish Van</span><code class="ph-path">./images/turkish-van.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Turkish Van</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Turkey</span><span>⚖ Large</span><span>🕐 ~1600s</span></div>
+            <p class="breed-desc">Nicknamed 'the swimming cat' for their love of water. Developed naturally near Lake Van in Turkey. Their water-resistant cashmere-like coat and striking color pattern are iconic.</p>
+            <div class="breed-traits"><span class="trait">Swimmer</span><span class="trait">Energetic</span><span class="trait">Bold</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Siamese" data-origin="Thailand" data-traits="vocal social pointed blue eyes">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Siamese.png" alt="Siamese" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Siamese</span><code class="ph-path">./images/siamese.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Siamese</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Thailand</span><span>⚖ Medium</span><span>🕐 ~1300s</span></div>
+            <p class="breed-desc">One of Asia's first recognized breeds, depicted in Thai manuscripts from the 14th century. Famous for striking blue eyes, color-point markings, and extremely chatty personalities.</p>
+            <div class="breed-traits"><span class="trait">Vocal</span><span class="trait">Social</span><span class="trait">Pointed</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Korat" data-origin="Thailand" data-traits="quiet loyal silver blue lucky">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Korat.png" alt="Korat" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Korat</span><code class="ph-path">./images/korat.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Korat</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Thailand</span><span>⚖ Small</span><span>🕐 ~1350s</span></div>
+            <p class="breed-desc">Considered a symbol of good luck in Thailand, gifted to brides for centuries. One of the world's oldest natural breeds with a silver-blue single coat and heart-shaped face.</p>
+            <div class="breed-traits"><span class="trait">Quiet</span><span class="trait">Loyal</span><span class="trait">Silver-blue</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Burmese" data-origin="Burma" data-traits="affectionate playful compact">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Burmese.png" alt="Burmese" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Burmese</span><code class="ph-path">./images/burmese.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Burmese</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Burma/Myanmar</span><span>⚖ Medium</span><span>🕐 ~1300s</span></div>
+            <p class="breed-desc">Descended from a single cat named Wong Mau brought to the US in 1930. Legend holds the breed was kept in Burmese temples as sacred cats of the gods.</p>
+            <div class="breed-traits"><span class="trait">Affectionate</span><span class="trait">Playful</span><span class="trait">Compact</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Japanese Bobtail" data-origin="Japan" data-traits="lucky agile vocal pom-pom tail">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Japanese Bobtail.png" alt="Japanese Bobtail" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Japanese Bobtail</span><code class="ph-path">./images/japanese-bobtail.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Japanese Bobtail</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Japan</span><span>⚖ Medium</span><span>🕐 ~600 AD</span></div>
+            <p class="breed-desc">Depicted in Japanese art for over 1,000 years. The iconic Maneki-neko (beckoning cat) is based on this breed. Their distinctive pom-pom tail is a natural mutation.</p>
+            <div class="breed-traits"><span class="trait">Lucky</span><span class="trait">Agile</span><span class="trait">Vocal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Chartreux" data-origin="France" data-traits="quiet robust blue coat monks">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Chartreux.png" alt="Chartreux" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Chartreux</span><code class="ph-path">./images/chartreux.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Chartreux</div>
+            <div class="breed-meta"><span class="breed-origin">📍 France</span><span>⚖ Large</span><span>🕐 ~1500s</span></div>
+            <p class="breed-desc">Possibly bred by Carthusian monks in France, this robust blue-grey cat is known for its 'smile.' A natural breed that survived largely unchanged for centuries.</p>
+            <div class="breed-traits"><span class="trait">Quiet</span><span class="trait">Robust</span><span class="trait">Blue coat</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Sokoke" data-origin="Kenya" data-traits="rare wild pattern agile forest">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Sokoke.png" alt="Sokoke" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Sokoke</span><code class="ph-path">./images/sokoke.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Sokoke</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Kenya</span><span>⚖ Medium</span><span>🕐 1978</span></div>
+            <p class="breed-desc">One of the rarest breeds, discovered in the Arabuko Sokoke forest of Kenya. Their modified tabby coat pattern resembles tree bark. Extremely agile tree climbers.</p>
+            <div class="breed-traits"><span class="trait">Rare</span><span class="trait">Wild-pattern</span><span class="trait">Agile</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Siberian" data-origin="Russia" data-traits="hypoallergenic powerful agile forest">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Siberian.png" alt="Siberian" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Siberian</span><code class="ph-path">./images/siberian.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Siberian</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Russia</span><span>⚖ Large</span><span>🕐 ~1000 AD</span></div>
+            <p class="breed-desc">Russia's national cat, referenced in fairy tales for over 1,000 years. A large, powerful forest cat that produces lower levels of the Fel d1 allergen — better for allergy sufferers.</p>
+            <div class="breed-traits"><span class="trait">Hypoallergenic</span><span class="trait">Powerful</span><span class="trait">Agile</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Aegean" data-origin="Greece" data-traits="natural island athletic heritage">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Aegean.png" alt="Aegean" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Aegean</span><code class="ph-path">./images/aegean.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Aegean</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Greece</span><span>⚖ Medium</span><span>🕐 Ancient</span></div>
+            <p class="breed-desc">One of the few fully natural breeds, developed from cats on the Greek Cyclades islands over thousands of years. Recognized as a Greek national heritage breed.</p>
+            <div class="breed-traits"><span class="trait">Natural</span><span class="trait">Island cat</span><span class="trait">Athletic</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Khao Manee" data-origin="Thailand" data-traits="white coat odd eyes lucky royalty">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Khao Manee.png" alt="Khao Manee" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Khao Manee</span><code class="ph-path">./images/khao-manee.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Khao Manee</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Thailand</span><span>⚖ Medium</span><span>🕐 ~1350s</span></div>
+            <p class="breed-desc">Known as 'White Gem,' this pure white Thai breed with odd-colored eyes was kept exclusively by Thai royalty for centuries and considered an omen of good fortune.</p>
+            <div class="breed-traits"><span class="trait">White coat</span><span class="trait">Odd eyes</span><span class="trait">Lucky</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Cyprus Cat" data-origin="Cyprus" data-traits="ancient robust rare oldest">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Cyprus.png" alt="Cyprus Cat" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Cyprus Cat</span><code class="ph-path">./images/cyprus-cat.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Cyprus Cat</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Cyprus</span><span>⚖ Medium</span><span>🕐 ~7500 BC</span></div>
+            <p class="breed-desc">Potentially the oldest domestic cat lineage, linked to a burial site in Cyprus from 7500 BC. A naturally developed breed with diverse coat types, now formally recognized.</p>
+            <div class="breed-traits"><span class="trait">Ancient</span><span class="trait">Robust</span><span class="trait">Rare</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Suphalak" data-origin="Thailand" data-traits="copper red rare ancient thai">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Suphalak.png" alt="Suphalak" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Suphalak</span><code class="ph-path">./images/suphalak.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Suphalak</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Thailand</span><span>⚖ Medium</span><span>🕐 ~1350s</span></div>
+            <p class="breed-desc">An ancient Thai breed from the same Tamra Maew manuscript as the Korat and Siamese. Their rare copper-red coat was considered auspicious. Nearly extinct until recent preservation efforts.</p>
+            <div class="breed-traits"><span class="trait">Copper-red</span><span class="trait">Rare</span><span class="trait">Ancient</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="ancient" data-name="Dragon Li" data-origin="China" data-traits="wild tabby natural chinese rare">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Dragon Li.png" alt="Dragon Li" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Dragon Li</span><code class="ph-path">./images/dragon-li.jpg</code></div>
+            <span class="breed-badge">Ancient</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Dragon Li</div>
+            <div class="breed-meta"><span class="breed-origin">📍 China</span><span>⚖ Medium</span><span>🕐 Ancient</span></div>
+            <p class="breed-desc">China's only native domestic cat breed, descended directly from the Chinese Mountain Cat. Their striking brown tabby coat and muscular build reflect centuries of minimal selective breeding.</p>
+            <div class="breed-traits"><span class="trait">Wild tabby</span><span class="trait">Natural</span><span class="trait">Rare</span></div>
+          </div>
+        </div>
+
+       
+        <div class="breed-card" data-category="western" data-name="Maine Coon" data-origin="USA" data-traits="gentle dog-like large tufted ears">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Maine Coon.png" alt="Maine Coon" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Maine Coon</span><code class="ph-path">./images/maine-coon.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Maine Coon</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1860s</span></div>
+            <p class="breed-desc">America's oldest native long-haired breed. Often called 'the dog of the cat world.' Males can exceed 18 lbs, with tufted ears and a signature bushy tail.</p>
+            <div class="breed-traits"><span class="trait">Gentle</span><span class="trait">Dog-like</span><span class="trait">Tufted ears</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Norwegian Forest Cat" data-origin="Norway" data-traits="independent rugged climber norse">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Norwegian Forest Cat.png" alt="Norwegian Forest Cat" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Norwegian Forest Cat</span><code class="ph-path">./images/norwegian-forest-cat.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Norwegian Forest Cat</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Norway</span><span>⚖ Large</span><span>🕐 ~1600s</span></div>
+            <p class="breed-desc">Known in Norse mythology as the fairy cat of the forest. Built for Scandinavian winters with a thick double coat. Strong climbers who always prefer the highest perch.</p>
+            <div class="breed-traits"><span class="trait">Independent</span><span class="trait">Rugged</span><span class="trait">Climber</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="British Shorthair" data-origin="United Kingdom" data-traits="calm plush easy-going cheshire">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/British Shorthair.png" alt="British Shorthair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">British Shorthair</span><code class="ph-path">./images/british-shorthair.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">British Shorthair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Large</span><span>🕐 1800s</span></div>
+            <p class="breed-desc">Descended from cats brought to Britain by the Romans. The Cheshire Cat in Alice in Wonderland was inspired by this breed. Known for their dense, crisp, plush coat.</p>
+            <div class="breed-traits"><span class="trait">Calm</span><span class="trait">Plush coat</span><span class="trait">Easy-going</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Scottish Fold" data-origin="Scotland" data-traits="owl-like calm unique ears folded">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Scottish Fold.png" alt="Scottish Fold" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Scottish Fold</span><code class="ph-path">./images/scottish-fold.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Scottish Fold</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Scotland</span><span>⚖ Medium</span><span>🕐 1961</span></div>
+            <p class="breed-desc">A spontaneous mutation discovered in 1961 on a farm in Scotland. Their folded ears give an irresistibly owl-like appearance. Known for sitting in 'the Buddha sit' position.</p>
+            <div class="breed-traits"><span class="trait">Owl-like</span><span class="trait">Calm</span><span class="trait">Unique ears</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Russian Blue" data-origin="Russia" data-traits="reserved green eyes loyal blue grey">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Russian Blue.png" alt="Russian Blue" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Russian Blue</span><code class="ph-path">./images/russian-blue.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Russian Blue</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Russia</span><span>⚖ Medium</span><span>🕐 1800s</span></div>
+            <p class="breed-desc">Believed to have originated in the port of Archangel, Russia. Their brilliant green eyes emerge through a gorgeous blue-grey double coat. Reserved with strangers, devoted to family.</p>
+            <div class="breed-traits"><span class="trait">Reserved</span><span class="trait">Green eyes</span><span class="trait">Loyal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Manx" data-origin="Isle of Man" data-traits="tailless athletic dog-like rumpy">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Manx.png" alt="Manx" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Manx</span><code class="ph-path">./images/manx.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Manx</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Isle of Man</span><span>⚖ Medium</span><span>🕐 ~1700s</span></div>
+            <p class="breed-desc">An ancient natural mutation from the Isle of Man resulting in a tailless cat. Their rounded rear and rabbit-like hop are distinctive. Many are 'rumpies' (fully tailless) or 'stumpies.'</p>
+            <div class="breed-traits"><span class="trait">Tailless</span><span class="trait">Athletic</span><span class="trait">Dog-like</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Persian" data-origin="Iran" data-traits="gentle quiet flat-faced luxurious">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Persian.png" alt="Persian" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Persian</span><code class="ph-path">./images/persian.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Persian</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Iran</span><span>⚖ Large</span><span>🕐 1600s</span></div>
+            <p class="breed-desc">One of the most popular breeds in the world. Their luxurious flowing coat and sweet, quiet disposition made them darlings of Victorian aristocracy. A symbol of refined elegance.</p>
+            <div class="breed-traits"><span class="trait">Gentle</span><span class="trait">Quiet</span><span class="trait">Flat-faced</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Birman" data-origin="Myanmar" data-traits="sacred white gloves gentle blue eyes">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Birman.png" alt="Birman" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Birman</span><code class="ph-path">./images/birman.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Birman</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Myanmar/France</span><span>⚖ Large</span><span>🕐 1919</span></div>
+            <p class="breed-desc">The Sacred Cat of Burma, said to have lived in Burmese temples. Distinguished by striking white gloves on all four paws and deep blue eyes. First documented in France in 1919.</p>
+            <div class="breed-traits"><span class="trait">Sacred</span><span class="trait">White gloves</span><span class="trait">Gentle</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Cymric" data-origin="Canada" data-traits="tailless playful loyal longhair manx">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Cymric.png" alt="Cymric" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Cymric</span><code class="ph-path">./images/cymric.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Cymric</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Canada/Isle of Man</span><span>⚖ Medium</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">The long-haired Manx. Developed independently in Canada. Like the Manx, they're tailless or have a short stub, with a rounded, rabbit-like appearance and dog-like personality.</p>
+            <div class="breed-traits"><span class="trait">Tailless</span><span class="trait">Playful</span><span class="trait">Loyal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Exotic Shorthair" data-origin="USA" data-traits="flat face plush calm persian short">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Exotic Shorthair.png" alt="Exotic Shorthair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Exotic Shorthair</span><code class="ph-path">./images/exotic-shorthair.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Exotic Shorthair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">Called 'the lazy man's Persian' for their plush, easy-maintenance coat. Developed as a short-haired alternative to the Persian, inheriting the same sweet, gentle temperament.</p>
+            <div class="breed-traits"><span class="trait">Flat-face</span><span class="trait">Plush</span><span class="trait">Calm</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="British Longhair" data-origin="United Kingdom" data-traits="calm plush fluffy british long">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/British Longhair.png" alt="British Longhair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">British Longhair</span><code class="ph-path">./images/british-longhair.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">British Longhair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Large</span><span>🕐 1900s</span></div>
+            <p class="breed-desc">Developed from British Shorthairs crossed with Persians. Long flowing coat over the characteristic British Shorthair build. Calm, gentle, and less demanding than many long-haired breeds.</p>
+            <div class="breed-traits"><span class="trait">Calm</span><span class="trait">Plush</span><span class="trait">Fluffy</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Himalayan" data-origin="USA/UK" data-traits="pointed calm blue eyes persian siamese">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Himalayan.png" alt="Himalayan" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Himalayan</span><code class="ph-path">./images/himalayan.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Himalayan</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA/UK</span><span>⚖ Large</span><span>🕐 1930s</span></div>
+            <p class="breed-desc">A cross between Persian and Siamese, combining the Persian's body and coat with Siamese color points. Their vivid blue eyes are striking against pale body and darker face.</p>
+            <div class="breed-traits"><span class="trait">Pointed</span><span class="trait">Calm</span><span class="trait">Blue eyes</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Scottish Straight" data-origin="Scotland" data-traits="straight ears calm round face fold">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Scottish Straight.png" alt="Scottish Straight" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Scottish Straight</span><code class="ph-path">./images/scottish-straight.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Scottish Straight</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Scotland</span><span>⚖ Medium</span><span>🕐 1961</span></div>
+            <p class="breed-desc">The straight-eared version from the same Scottish Fold breeding lines. Fold-to-Fold breeding can cause skeletal issues, so Folds are crossed with Straights to maintain health.</p>
+            <div class="breed-traits"><span class="trait">Straight ears</span><span class="trait">Calm</span><span class="trait">Round face</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="western" data-name="Nebelung" data-origin="USA" data-traits="blue grey shy silky mist russian">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Nebelung.png" alt="Nebelung" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Nebelung</span><code class="ph-path">./images/nebelung.jpg</code></div>
+            <span class="breed-badge">Western</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Nebelung</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1980s</span></div>
+            <p class="breed-desc">Named from the German for 'creature of the mist.' A long-haired Russian Blue variant with a shimmering blue-grey silky coat. Gentle and reserved, deeply loyal to their chosen person.</p>
+            <div class="breed-traits"><span class="trait">Blue-grey</span><span class="trait">Shy</span><span class="trait">Silky</span></div>
+          </div>
+        </div>
+
+        
+
+        <div class="breed-card" data-category="asian" data-name="Balinese" data-origin="USA" data-traits="graceful vocal silky siamese long">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Balinese.png" alt="Balinese" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Balinese</span><code class="ph-path">./images/balinese.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Balinese</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1950s</span></div>
+            <p class="breed-desc">A long-haired Siamese natural mutation. Named for the graceful dancers of Bali. They carry all the Siamese personality — social, vocal, loving — with a flowing, silky coat.</p>
+            <div class="breed-traits"><span class="trait">Graceful</span><span class="trait">Vocal</span><span class="trait">Silky</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Tonkinese" data-origin="Canada" data-traits="playful aqua eyes social burmese siamese">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Tonkinese.png" alt="Tonkinese" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Tonkinese</span><code class="ph-path">./images/tonkinese.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Tonkinese</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Canada</span><span>⚖ Medium</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">A deliberate cross between Siamese and Burmese cats. Their striking aquamarine eyes and mink coat pattern are unique to the breed. Combines the best of both parent breeds.</p>
+            <div class="breed-traits"><span class="trait">Playful</span><span class="trait">Aqua eyes</span><span class="trait">Social</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Singapura" data-origin="Singapore" data-traits="tiny curious big eyes smallest drain cat">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Singapura.png" alt="Singapura" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Singapura</span><code class="ph-path">./images/singapura.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Singapura</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Singapore</span><span>⚖ Small</span><span>🕐 1970s</span></div>
+            <p class="breed-desc">The world's smallest domestic cat breed, said to descend from 'drain cats' of Singapore. Their large eyes and ears give a perpetually kitten-like expression throughout life.</p>
+            <div class="breed-traits"><span class="trait">Tiny</span><span class="trait">Curious</span><span class="trait">Big eyes</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Burmilla" data-origin="United Kingdom" data-traits="gentle sociable silver sheen burmese chinchilla">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Burmilla.png" alt="Burmilla" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Burmilla</span><code class="ph-path">./images/burmilla.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Burmilla</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Medium</span><span>🕐 1981</span></div>
+            <p class="breed-desc">An accidental cross between a Burmese and Chinchilla Persian in 1981. Their silver-shaded coat with dark tipping gives a shimmering, luminous appearance unique to the breed.</p>
+            <div class="breed-traits"><span class="trait">Gentle</span><span class="trait">Sociable</span><span class="trait">Silver sheen</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Asian Semi-longhair" data-origin="United Kingdom" data-traits="playful affectionate silky tiffanie asian">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Asian Semi-longhair.png" alt="Asian Semi-longhair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Asian Semi-longhair</span><code class="ph-path">./images/asian-semi-longhair.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Asian Semi-longhair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Medium</span><span>🕐 1981</span></div>
+            <p class="breed-desc">Arose from the same Burmilla program. Long-haired version with all the Asian group's social, playful qualities and a beautiful flowing coat also known as the Tiffanie.</p>
+            <div class="breed-traits"><span class="trait">Playful</span><span class="trait">Affectionate</span><span class="trait">Silky</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Colorpoint Shorthair" data-origin="USA" data-traits="pointed vocal lean siamese red cream">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Colorpoint Shorthair.png" alt="Colorpoint Shorthair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Colorpoint Shorthair</span><code class="ph-path">./images/colorpoint-shorthair.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Colorpoint Shorthair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1940s</span></div>
+            <p class="breed-desc">Essentially a Siamese with non-traditional point colors: red, cream, lynx, and tortie points. Shares all Siamese characteristics but with an expanded color palette.</p>
+            <div class="breed-traits"><span class="trait">Pointed</span><span class="trait">Vocal</span><span class="trait">Lean</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Oriental Shorthair" data-origin="USA/UK" data-traits="300 colors chatty sleek siamese diverse">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Oriental Shorthair.png" alt="Oriental Shorthair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Oriental Shorthair</span><code class="ph-path">./images/oriental-shorthair.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Oriental Shorthair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA/UK</span><span>⚖ Medium</span><span>🕐 1950s</span></div>
+            <p class="breed-desc">Available in over 300 color and pattern combinations — the most visually diverse breed — while sharing identical Siamese personality traits in a non-pointed coat.</p>
+            <div class="breed-traits"><span class="trait">300+ colors</span><span class="trait">Chatty</span><span class="trait">Sleek</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Oriental Longhair" data-origin="United Kingdom" data-traits="silky social playful oriental siamese long">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Oriental Longhair.png" alt="Oriental Longhair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Oriental Longhair</span><code class="ph-path">./images/oriental-longhair.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Oriental Longhair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Medium</span><span>🕐 1970s</span></div>
+            <p class="breed-desc">The long-haired version of the Oriental Shorthair. Same diverse 300+ color range and Siamese-type personality with a flowing, silky single coat.</p>
+            <div class="breed-traits"><span class="trait">Silky</span><span class="trait">Social</span><span class="trait">Playful</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="asian" data-name="Tiffanie" data-origin="United Kingdom" data-traits="long-haired gentle silky asian burmilla">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Tiffanie.png" alt="Tiffanie" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Tiffanie</span><code class="ph-path">./images/tiffanie.jpg</code></div>
+            <span class="breed-badge">Asian</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Tiffanie</div>
+            <div class="breed-meta"><span class="breed-origin">📍 United Kingdom</span><span>⚖ Medium</span><span>🕐 1981</span></div>
+            <p class="breed-desc">The long-haired version of the Asian group from the Burmilla program. Combines a silky flowing coat with the gentle, sociable personality that characterizes the Asian shorthair group.</p>
+            <div class="breed-traits"><span class="trait">Long-haired</span><span class="trait">Gentle</span><span class="trait">Silky</span></div>
+          </div>
+        </div>
+
+
+        <div class="breed-card" data-category="american" data-name="American Shorthair" data-origin="USA" data-traits="hardy calm adaptable working settlers">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/American Shorthair.png" alt="American Shorthair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">American Shorthair</span><code class="ph-path">./images/american-shorthair.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">American Shorthair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1900s</span></div>
+            <p class="breed-desc">Descended from European cats brought by early settlers. Selectively bred from the best working cats, they're robust, long-lived, and easy-going with all family members.</p>
+            <div class="breed-traits"><span class="trait">Hardy</span><span class="trait">Calm</span><span class="trait">Adaptable</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="American Bobtail" data-origin="USA" data-traits="wild look dog-like alert bobbed tail">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/American Bobtail.png" alt="American Bobtail" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">American Bobtail</span><code class="ph-path">./images/american-bobtail.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">American Bobtail</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">A natural mutation resulting in a short, bobbed tail. Developed from a wild-looking shorthaired cat found in Arizona. Known for an unusually dog-like personality and intelligence.</p>
+            <div class="breed-traits"><span class="trait">Wild look</span><span class="trait">Dog-like</span><span class="trait">Alert</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="American Curl" data-origin="USA" data-traits="curled ears playful kitten-like california">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/American Curl.png" alt="American Curl" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">American Curl</span><code class="ph-path">./images/american-curl.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">American Curl</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1981</span></div>
+            <p class="breed-desc">A natural mutation discovered in California in 1981. Their ears curl backward in a graceful arc. A single dominant gene produces the trait in both short and long-haired varieties.</p>
+            <div class="breed-traits"><span class="trait">Curled ears</span><span class="trait">Playful</span><span class="trait">Kitten-like</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="American Wirehair" data-origin="USA" data-traits="unique coat wiry resilient calm new york">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/American Wirehair.png" alt="American Wirehair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">American Wirehair</span><code class="ph-path">./images/american-wirehair.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">American Wirehair</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1966</span></div>
+            <p class="breed-desc">A spontaneous mutation from a New York farm. Every hair — including eyebrows and whiskers — is crimped or bent, creating an unusual, springy, wire-like texture unlike any other breed.</p>
+            <div class="breed-traits"><span class="trait">Unique coat</span><span class="trait">Resilient</span><span class="trait">Calm</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Ragdoll" data-origin="USA" data-traits="docile blue eyes floppy large california">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Ragdoll.png" alt="Ragdoll" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Ragdoll</span><code class="ph-path">./images/ragdoll.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Ragdoll</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">Named for their tendency to go completely limp when picked up. Developed in California in the 1960s. One of the largest domestic cat breeds, gentle enough for apartment living.</p>
+            <div class="breed-traits"><span class="trait">Docile</span><span class="trait">Blue eyes</span><span class="trait">Floppy</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Ragamuffin" data-origin="USA" data-traits="plush coat calm friendly walnut eyes">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Ragamuffin.png" alt="Ragamuffin" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Ragamuffin</span><code class="ph-path">./images/ragamuffin.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Ragamuffin</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1994</span></div>
+            <p class="breed-desc">A close relative of the Ragdoll with a broader range of colors and patterns. Distinguished by large, walnut-shaped eyes and incredibly dense, rabbit-like fur.</p>
+            <div class="breed-traits"><span class="trait">Plush coat</span><span class="trait">Calm</span><span class="trait">Friendly</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Selkirk Rex" data-origin="USA" data-traits="curly patient plush wyoming sheep">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Selkirk Rex.png" alt="Selkirk Rex" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Selkirk Rex</span><code class="ph-path">./images/selkirk-rex.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Selkirk Rex</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1987</span></div>
+            <p class="breed-desc">Discovered in Wyoming. The only rex breed derived from a random-bred cat. Their loose, curly coat is sometimes called 'the cat in sheep's clothing.' Patient and affectionate.</p>
+            <div class="breed-traits"><span class="trait">Curly</span><span class="trait">Patient</span><span class="trait">Plush</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Havana Brown" data-origin="England/USA" data-traits="chocolate curious vocal cigar paws">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Havana Brown.png" alt="Havana Brown" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Havana Brown</span><code class="ph-path">./images/havana-brown.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Havana Brown</div>
+            <div class="breed-meta"><span class="breed-origin">📍 England/USA</span><span>⚖ Medium</span><span>🕐 1950s</span></div>
+            <p class="breed-desc">A rich, warm chocolate-brown cat from Siamese and black domestic cat crosses. Named for the color of a Havana cigar. Notably uses their paws like hands to explore objects.</p>
+            <div class="breed-traits"><span class="trait">Chocolate</span><span class="trait">Curious</span><span class="trait">Vocal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Bombay" data-origin="USA" data-traits="black coat gold eyes panther burmese">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Bombay.png" alt="Bombay" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Bombay</span><code class="ph-path">./images/bombay.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Bombay</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1958</span></div>
+            <p class="breed-desc">Developed to resemble a miniature Indian black panther. Crossed from sable Burmese and black American Shorthairs. Their jet-black coat and vivid copper eyes are immediately striking.</p>
+            <div class="breed-traits"><span class="trait">Black coat</span><span class="trait">Gold eyes</span><span class="trait">Mini panther</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Snowshoe" data-origin="USA" data-traits="white paws blue eyes rare philadelphia siamese">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Snowshoe.png" alt="Snowshoe" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Snowshoe</span><code class="ph-path">./images/snowshoe.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Snowshoe</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1960s</span></div>
+            <p class="breed-desc">Developed in Philadelphia from Siamese producing kittens with white paws. Distinctive white 'snowshoe' feet, pointed markings, and bright blue eyes define the breed standard.</p>
+            <div class="breed-traits"><span class="trait">White paws</span><span class="trait">Blue eyes</span><span class="trait">Rare</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Somali" data-origin="USA" data-traits="fox-like active ticked abyssinian long">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Somali.png" alt="Somali" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Somali</span><code class="ph-path">./images/somali.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Somali</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1967</span></div>
+            <p class="breed-desc">The long-haired Abyssinian — also called 'the fox cat' for their bushy tail and large ears. Shares the Abyssinian's curiosity and athleticism with a spectacular ticked, agouti coat.</p>
+            <div class="breed-traits"><span class="trait">Fox-like</span><span class="trait">Active</span><span class="trait">Ticked</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Pixiebob" data-origin="USA" data-traits="bobcat look dog-like loyal polydactyl">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Pixiebob.png" alt="Pixiebob" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Pixiebob</span><code class="ph-path">./images/pixiebob.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Pixiebob</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1985</span></div>
+            <p class="breed-desc">Bred to resemble the coastal red bobcat of the Pacific Northwest. Many are polydactyl (extra toes). Despite the wild look, they're exceptionally gentle and dog-like in personality.</p>
+            <div class="breed-traits"><span class="trait">Bobbed tail</span><span class="trait">Wild look</span><span class="trait">Loyal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Australian Mist" data-origin="Australia" data-traits="spotted marbled calm playful native australia">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Australian Mist.png" alt="Australian Mist" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Australian Mist</span><code class="ph-path">./images/australian-mist.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Australian Mist</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Australia</span><span>⚖ Medium</span><span>🕐 1977</span></div>
+            <p class="breed-desc">Australia's only native cat breed, developed from Burmese, Abyssinian, and domestic shorthairs. Their distinctive misty, spotted or marbled coat pattern is unique to the breed.</p>
+            <div class="breed-traits"><span class="trait">Spotted</span><span class="trait">Calm</span><span class="trait">Playful</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="Chantilly-Tiffany" data-origin="USA" data-traits="chocolate semi-long gentle rare">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Chantilly-Tiffany.png" alt="Chantilly-Tiffany" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Chantilly-Tiffany</span><code class="ph-path">./images/chantilly-tiffany.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Chantilly-Tiffany</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1967</span></div>
+            <p class="breed-desc">A nearly extinct breed rediscovered in the 1960s. Beautiful semi-long chocolate coat with golden eyes. Devoted and quiet — sometimes called 'the gentle giant.'</p>
+            <div class="breed-traits"><span class="trait">Chocolate</span><span class="trait">Semi-long</span><span class="trait">Gentle</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="american" data-name="California Spangled" data-origin="USA" data-traits="spotted wild look rare fur trade">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/California Spangled.png" alt="California Spangled" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">California Spangled</span><code class="ph-path">./images/california-spangled.jpg</code></div>
+            <span class="breed-badge">American</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">California Spangled</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1985</span></div>
+            <p class="breed-desc">Developed in the 1980s to protest the fur trade. Bred from various domestic and Asian breeds to resemble wild spotted cats without any wild genetics. Now very rare.</p>
+            <div class="breed-traits"><span class="trait">Spotted</span><span class="trait">Wild look</span><span class="trait">Rare</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Sphynx" data-origin="Canada" data-traits="hairless extroverted warm suede toronto">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Sphynx.png" alt="Sphynx" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Sphynx</span><code class="ph-path">./images/sphynx.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Sphynx</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Canada</span><span>⚖ Medium</span><span>🕐 1966</span></div>
+            <p class="breed-desc">Born from a natural mutation in Toronto in 1966. Despite appearances, covered in fine peach-fuzz down and feels like warm suede. The most extroverted, social cats in the world.</p>
+            <div class="breed-traits"><span class="trait">Hairless</span><span class="trait">Extroverted</span><span class="trait">Warm</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Donskoy" data-origin="Russia" data-traits="hairless wrinkled dog-like russia social">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Donskoy.png" alt="Donskoy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Donskoy</span><code class="ph-path">./images/donskoy.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Donskoy</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Russia</span><span>⚖ Medium</span><span>🕐 1987</span></div>
+            <p class="breed-desc">Discovered in 1987 via a different hairless gene than the Sphynx. Some are born with a coat they shed completely over time. Extraordinarily wrinkled and highly social.</p>
+            <div class="breed-traits"><span class="trait">Hairless</span><span class="trait">Wrinkled</span><span class="trait">Dog-like</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Peterbald" data-origin="Russia" data-traits="elegant hairless vocal oriental siamese">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Peterbald.png" alt="Peterbald" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Peterbald</span><code class="ph-path">./images/peterbald.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Peterbald</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Russia</span><span>⚖ Medium</span><span>🕐 1994</span></div>
+            <p class="breed-desc">An Oriental-type cat with a dominant hairless gene from the Donskoy. More elegant and svelte than other hairless breeds. Highly vocal and deeply social like their Siamese ancestors.</p>
+            <div class="breed-traits"><span class="trait">Elegant</span><span class="trait">Hairless</span><span class="trait">Vocal</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Devon Rex" data-origin="England" data-traits="wavy coat elfin mischievous pixie devon">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Devon Rex.png" alt="Devon Rex" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Devon Rex</span><code class="ph-path">./images/devon-rex.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Devon Rex</div>
+            <div class="breed-meta"><span class="breed-origin">📍 England</span><span>⚖ Small</span><span>🕐 1959</span></div>
+            <p class="breed-desc">Discovered in Devon, England in 1959. Their large ears, wide eyes, and short wavy coat give an otherworldly, pixie-like appearance. Known for incredible mischief and constant antics.</p>
+            <div class="breed-traits"><span class="trait">Wavy coat</span><span class="trait">Elfin</span><span class="trait">Mischievous</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Cornish Rex" data-origin="England" data-traits="curly athletic playful cornwall greyhound">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Cornish Rex.png" alt="Cornish Rex" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Cornish Rex</span><code class="ph-path">./images/cornish-rex.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Cornish Rex</div>
+            <div class="breed-meta"><span class="breed-origin">📍 England</span><span>⚖ Medium</span><span>🕐 1950</span></div>
+            <p class="breed-desc">The first rex mutation, discovered in Cornwall in 1950. Their coat lacks guard hairs, leaving only fine down layer — resulting in exceptionally soft, tight-curled waves. Greyhound-like build.</p>
+            <div class="breed-traits"><span class="trait">Curly</span><span class="trait">Athletic</span><span class="trait">Playful</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="LaPerm" data-origin="USA" data-traits="curly affectionate lively oregon perm">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/LaPerm.png" alt="LaPerm" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">LaPerm</span><code class="ph-path">./images/laperm.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">LaPerm</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1982</span></div>
+            <p class="breed-desc">Spontaneous mutation on an Oregon farm in 1982. Born bald, they develop curly or wavy coats. Named for the permanent wave hairstyle popular at the time of their discovery.</p>
+            <div class="breed-traits"><span class="trait">Curly</span><span class="trait">Affectionate</span><span class="trait">Lively</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="German Rex" data-origin="Germany" data-traits="curly gentle rare early mutation first">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/German Rex.png" alt="German Rex" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">German Rex</span><code class="ph-path">./images/german-rex.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">German Rex</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Germany</span><span>⚖ Medium</span><span>🕐 1940s</span></div>
+            <p class="breed-desc">One of the earliest rex mutations, discovered in Germany before the Cornish Rex. Similar in appearance but developed independently. Gentle and people-oriented throughout.</p>
+            <div class="breed-traits"><span class="trait">Curly</span><span class="trait">Gentle</span><span class="trait">Rare</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="rex" data-name="Ukrainian Levkoy" data-origin="Ukraine" data-traits="hairless folded ears unusual donskoy scotland">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Ukrainian Levkoy.png" alt="Ukrainian Levkoy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Ukrainian Levkoy</span><code class="ph-path">./images/ukrainian-levkoy.jpg</code></div>
+            <span class="breed-badge">Rex</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Ukrainian Levkoy</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Ukraine</span><span>⚖ Medium</span><span>🕐 2000s</span></div>
+            <p class="breed-desc">Developed by crossing the Donskoy (hairless) and Scottish Fold (folded ears). Their distinctive inward-folding ears on a hairless, dog-faced body is completely unique among all breeds.</p>
+            <div class="breed-traits"><span class="trait">Hairless</span><span class="trait">Folded ears</span><span class="trait">Unusual</span></div>
+          </div>
+        </div>
+
+
+        <div class="breed-card" data-category="hybrid" data-name="Bengal" data-origin="USA" data-traits="spotted wild look active leopard athletic">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Bengal.png" alt="Bengal" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Bengal</span><code class="ph-path">./images/bengal.jpg</code></div>
+            <span class="breed-badge">Hybrid</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Bengal</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1963</span></div>
+            <p class="breed-desc">Bred from the Asian leopard cat crossed with domestic cats. Retains the breathtaking spotted or marbled coat of wild cats with a domestic temperament. Often described as dog-like.</p>
+            <div class="breed-traits"><span class="trait">Spotted</span><span class="trait">Wild-look</span><span class="trait">Active</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="hybrid" data-name="Savannah" data-origin="USA" data-traits="tallest spotted exotic serval large wild">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Savannah.png" alt="Savannah" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Savannah</span><code class="ph-path">./images/savannah.jpg</code></div>
+            <span class="breed-badge">Hybrid</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Savannah</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ X-Large</span><span>🕐 1986</span></div>
+            <p class="breed-desc">A hybrid of domestic cat and African serval. The tallest domestic cat breed, with long legs, large ears, and bold spots. Early generations can exceed 25 lbs. Extremely active and intelligent.</p>
+            <div class="breed-traits"><span class="trait">Tallest breed</span><span class="trait">Spotted</span><span class="trait">Exotic</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="hybrid" data-name="Chausie" data-origin="USA" data-traits="jungle athletic wild felis chaus long legs">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Chausie.png" alt="Chausie" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Chausie</span><code class="ph-path">./images/chausie.jpg</code></div>
+            <span class="breed-badge">Hybrid</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Chausie</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Large</span><span>🕐 1990s</span></div>
+            <p class="breed-desc">A hybrid of jungle cat (Felis chaus) and domestic cats. Long-legged and athletic with a wild appearance but thoroughly domestic temperament. The name derives from Felis chaus.</p>
+            <div class="breed-traits"><span class="trait">Jungle look</span><span class="trait">Athletic</span><span class="trait">Wild</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="hybrid" data-name="Serengeti" data-origin="USA" data-traits="spotted sleek active serval bengal oriental">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Serengeti.png" alt="Serengeti" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Serengeti</span><code class="ph-path">./images/serengeti.jpg</code></div>
+            <span class="breed-badge">Hybrid</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Serengeti</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1994</span></div>
+            <p class="breed-desc">Developed to resemble a serval without using wild blood. Crossed from Bengal and Oriental Shorthair. Striking long legs, large rounded ears, and bold spotted pattern are the hallmarks.</p>
+            <div class="breed-traits"><span class="trait">Spotted</span><span class="trait">Sleek</span><span class="trait">Active</span></div>
+          </div>
+        </div>
+
+
+        <div class="breed-card" data-category="unique" data-name="Munchkin" data-origin="USA" data-traits="short legs playful ferret oz mutation">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Munchkin.png" alt="Munchkin" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Munchkin</span><code class="ph-path">./images/munchkin.jpg</code></div>
+            <span class="breed-badge">Unique</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Munchkin</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Small</span><span>🕐 1991</span></div>
+            <p class="breed-desc">A natural genetic mutation producing shortened legs, first documented in the US in 1983, recognized in 1991. Despite short legs, they move quickly and love to play. Named after the Munchkins of Oz.</p>
+            <div class="breed-traits"><span class="trait">Short legs</span><span class="trait">Playful</span><span class="trait">Ferret-like</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="unique" data-name="Ojos Azules" data-origin="USA" data-traits="deep blue eyes rare unusual new mexico sapphire">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Ojos Azules.png" alt="Ojos Azules" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Ojos Azules</span><code class="ph-path">./images/ojos-azules.jpg</code></div>
+            <span class="breed-badge">Unique</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Ojos Azules</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 1984</span></div>
+            <p class="breed-desc">Extraordinarily rare breed with deep blue eyes in non-pointed cats. Discovered in New Mexico in 1984. The eye-color gene is unlike any other breed's and produces vivid sapphire eyes.</p>
+            <div class="breed-traits"><span class="trait">Deep blue eyes</span><span class="trait">Rare</span><span class="trait">Unusual</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="unique" data-name="Lykoi" data-origin="USA" data-traits="werewolf partial hairless wild wolf roan">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Lykoi.png" alt="Lykoi" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Lykoi</span><code class="ph-path">./images/lykoi.jpg</code></div>
+            <span class="breed-badge">Unique</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Lykoi</div>
+            <div class="breed-meta"><span class="breed-origin">📍 USA</span><span>⚖ Medium</span><span>🕐 2010</span></div>
+            <p class="breed-desc">Called the 'werewolf cat' for their partial hairlessness and roan-patterned fur. A natural mutation confirmed in 2010. They lack the undercoat and some guard hairs, creating a wolf-like appearance.</p>
+            <div class="breed-traits"><span class="trait">Werewolf cat</span><span class="trait">Partial hairless</span><span class="trait">Wild</span></div>
+          </div>
+        </div>
+
+        <div class="breed-card" data-category="unique" data-name="Aphrodite Giant" data-origin="Cyprus" data-traits="large gentle natural giant island ancient">
+          <div class="breed-img-wrap">
+            <img src="breeds.img/Aphrodite Giant.png" alt="Aphrodite Giant" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="breed-img-placeholder" style="display:none"><span class="ph-icon">🐱</span><span class="ph-name">Aphrodite Giant</span><code class="ph-path">./images/aphrodite-giant.jpg</code></div>
+            <span class="breed-badge">Unique</span>
+          </div>
+          <div class="breed-body">
+            <div class="breed-name">Aphrodite Giant</div>
+            <div class="breed-meta"><span class="breed-origin">📍 Cyprus</span><span>⚖ Large</span><span>🕐 Ancient</span></div>
+            <p class="breed-desc">A large natural breed from Cyprus, named for the goddess Aphrodite. One of the largest natural cat breeds, they're gentle giants with a strong hunting background and island heritage.</p>
+            <div class="breed-traits"><span class="trait">Large</span><span class="trait">Gentle</span><span class="trait">Natural</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jamella Bunocan</p>
+    <p class="footer-copy">Inspired by my beloved sons and daughter: Haru, Ginger &amp; Calcipher</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

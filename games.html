@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Felis — Interactive cat games. Build a breed or find your perfect feline match.">
+  <title>Felis — Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor"      id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><span>F</span>elis</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="breeds.html">Breeds</a></li>
+      <li><a href="index.html#timeline">History</a></li>
+      <li><a href="index.html#facts">Facts</a></li>
+      <li><a href="games.html" class="active">Games</a></li>
+    </ul>
+    <span class="nav-count">2 Interactive Games</span>
+  </nav>
+
+  <div class="games-hero">
+    <div class="hero-ambient"></div>
+    <div class="hero-grain"></div>
+    <div class="games-hero-content">
+      <p class="hero-eyebrow">Interactive</p>
+      <h1>Feline <em>Games</em></h1>
+      <p class="games-hero-sub">Two ways to find your perfect cat — mix traits to discover a breed, or answer a few questions to find your ideal feline match.</p>
+    </div>
+  </div>
+
+  <section id="games-main">
+    <div class="section-wrap">
+
+      <div class="game-tabs">
+        <button class="game-tab active" data-game="builder">🧬 Build-a-Breed</button>
+        <button class="game-tab"        data-game="lifestyle">🏠 Find My Breed</button>
+      </div>
+
+      
+      <div class="game-panel active" id="game-builder">
+        <div class="game-card">
+          <p class="game-intro-title">Cross two breeds. Reveal the offspring.</p>
+          <p class="game-intro-sub">Pick any two cats from the deck below — drag them to your slots, then watch the magic happen.</p>
+
+          <div class="bp-stage">
+
+           
+            <p class="bp-instruction">Choose your two parent breeds</p>
+
+            
+            <div class="bp-arena">
+
+             
+              <div class="bp-parent-zone">
+                <p class="bp-parent-label">Parent 1</p>
+                <div class="bp-parent-card-slot" id="slot1">
+                  <div class="bp-slot-placeholder">
+                    <span class="bp-slot-placeholder-icon">🐱</span>
+                    <span class="bp-slot-placeholder-text">Pick a breed</span>
+                  </div>
+                </div>
+              </div>
+
+             
+              <div class="bp-cross-zone">
+                <span class="bp-cross-symbol" id="bpCrossSymbol">×</span>
+                <button class="bp-reveal-btn" id="builderSubmit" disabled>Reveal →</button>
+              </div>
+
+              <div class="bp-parent-zone">
+                <p class="bp-parent-label">Parent 2</p>
+                <div class="bp-parent-card-slot" id="slot2">
+                  <div class="bp-slot-placeholder">
+                    <span class="bp-slot-placeholder-icon">🐱</span>
+                    <span class="bp-slot-placeholder-text">Pick a breed</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+           
+            <div class="bp-deck-section">
+              <div class="bp-deck-header">
+                <span class="bp-deck-title">🃏 Breed Deck — 71 breeds</span>
+                <span class="bp-deck-hint">Hover to preview · Click to select</span>
+              </div>
+              <div id="breedPickerGrid" class="bp-deck"></div>
+            </div>
+
+            <div id="builderResult" class="builder-result" style="display:none;width:100%"></div>
+
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="game-panel" id="game-lifestyle">
+        <div class="game-card">
+          <div class="game-hud">
+            <span class="game-hud-item">Question <strong id="lsQNum">—</strong>/8</span>
+            <span class="game-hud-item" id="lsProgressLabel">Answer to continue</span>
+          </div>
+          <div id="lifestyleContent">
+            <p class="game-intro-title">Which breed suits your life?</p>
+            <p class="game-intro-sub">8 quick questions about your home, habits, and personality — we'll recommend the ideal cat breed for you.</p>
+            <button class="btn-primary" id="lifestyleStartBtn">Start →</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jamella Bunocan</p>
+    <p class="footer-copy">Inspired by my beloved sons and daughter: Haru, Ginger &amp; Calcipher</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
